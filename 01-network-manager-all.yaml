@@ -1,0 +1,13 @@
+network:
+  ethernets:
+    ens34:
+      addresses:
+      - 172.14.21.34/24
+      nameservers:
+        addresses: []
+        search: 
+      routes:
+      - to: default
+        via: 172.14.21.34
+  version: 2
+
