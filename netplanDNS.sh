@@ -2,7 +2,7 @@
 
 cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.backup
 
-NETPLAN_FILE="./01-network-manager-all.yaml"
+NETPLAN_FILE="/etc/netplan/00-installer-config.yaml"
 
 NEW_ADDRESSES=("8.8.8.8" "8.8.4.4")
 
