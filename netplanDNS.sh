@@ -10,6 +10,6 @@ NEW_ADDRESSES=("8.8.8.8" "8.8.4.4")
 
 for ADDRESS in "${NEW_ADDRESSES[@]}"
 do
-  yq eval --inplace '.network.ethernets.ens34.nameservers.addresses += ["'"$NEW_ADDRESSES"'"]' $NETPLAN_FILE
+  yq eval --inplace '.network.ethernets.ens34.nameservers.addresses += ["'"$ADDRESS"'"]' $NETPLAN_FILE
 done
 netplan apply
